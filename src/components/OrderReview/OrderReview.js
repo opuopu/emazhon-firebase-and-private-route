@@ -18,9 +18,9 @@ const OrderReview = () => {
     }
 
     const handlePlaceOrder = () => {
-        setCart([]);
-        clearTheCart();
-        history.push('/placeorder');
+        // setCart([]);
+        // clearTheCart();
+        history.push('/shipping');
     }
 
     return (

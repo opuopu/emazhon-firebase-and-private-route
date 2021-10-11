@@ -1,0 +1,14 @@
+.login{
+    display: inline-block;
+    margin: 100px 500px;
+    text-align: center;
+}
+.login input{
+    padding: 20px 100px;
+    margin: 10px 0;
+    
+}
+.login .btns{
+    color: white;
+    text-align: center;
+}
