@@ -1,14 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
-import Main from './layouts/Main';
-import Shop from './components/Shop/Shop';
-import Orders from './components/Orders/Orders';
 import Inventory from './components/Inventory/Inventory';
-import { productsAndCartLoader } from './loaders/productsAndCartLoader';
 import Login from './components/Login/Login';
-import SignUp from './components/SignUp/SignUp';
+import Orders from './components/Orders/Orders';
 import Shipping from './components/Shipping/Shipping';
+import Shop from './components/Shop/Shop';
+import SignUp from './components/SignUp/SignUp';
+import Main from './layouts/Main';
+import { productsAndCartLoader } from './loaders/productsAndCartLoader';
 import PrivateRoute from './routes/PrivateRoute';
 
 
@@ -20,7 +20,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
+          loader: () => fetch('http://localhost:3000/products'),
           element: <Shop></Shop>
         },
         {
